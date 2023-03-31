@@ -102,3 +102,26 @@
     font-size: 13px;
     margin: 10px 0;
 }
+
+/* media query */
+@media screen and (max-width: 360px) {
+  #model1 {
+    width: 320px;
+    left: 50%; /* 왼쪽 위치: 화면의 중앙*/
+    margin-left: -130px; /* 왼쪽 여백: 사진의 1/2 더 왼쪽으로*/
+      }
+  #model1 img {
+    width: 100%;
+  }
+  .menu a {
+    font-size: 16px;
+    letter-spacing: -1px; /*자간*/
+  }
+.fee, .day {
+  width: 95%;
+}
+.fee th, .day th {
+  width: 25%;
+}
+
+}
