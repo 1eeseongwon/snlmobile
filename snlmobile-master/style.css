@@ -130,6 +130,9 @@ legend {
   max-width: 500px;
   margin: 0 auto;
 }
+.w-800 {
+  max-width: 800px;
+}
 .d-flex { /*가로로 나란히 배치하는 클래스*/
   display: flex;
 }
@@ -144,16 +147,26 @@ legend {
 }
 .d-flex label {
   flex: 2;
+  margin-right: 16px;
+  text-align: right;
 }
 .d-flex input {
   flex: 8;
 }
+
 .d-flex > div { /*자손 선택자: 직계 (아들 딸 선택자)*/
   margin-left: 100px;
 }
-[type=submit] { /*속성 선택자 button 태그, type 속성, submit 값*/
+[type=submit], [type=reset] { /*속성 선택자 button 태그, type 속성, submit 값*/
   padding: 5px 20px;
+  
 } 
+[type=reset] {
+  margin-left: 1rem;
+  border:2px solid #006FFF;
+  color: #006FFF;
+  background-color: transparent;
+}
 hr {
   margin: 32px 32px;
 }
